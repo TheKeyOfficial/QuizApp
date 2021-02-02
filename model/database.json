@@ -1,0 +1,76 @@
+{
+    "login_data": {
+        "niels": {
+            "password": "f65cff68f602eed8ce0cc5f877502caa2df3f42024b86ad85fb05fb64f662aed:5396b55b6ea84c328a050fd564b3ac4e",
+            "num_played_quiz": 1,
+            "num_played_questions": 3,
+            "num_correct_answered_questions": 3
+        },
+        "can": {
+            "password": "3d7dc49a72263f14c84430149c447b7df9d1777c072fd1c7967edc472d44dfe7:44351c1b9b8b4718a67cf43e20d6f5da",
+            "num_played_quiz": 0,
+            "num_played_questions": 0,
+            "num_correct_answered_questions": 0
+        },
+        "thomas": {
+            "password": "0a26a2e36a8df6a66a83b5a08525b9455a98f8ff96a402495a0b2395a485237a:372fe5fe80224273b9c6759cedd41e75",
+            "num_played_quiz": 0,
+            "num_played_questions": 0,
+            "num_correct_answered_questions": 0
+        },
+        "peter": {
+            "password": "097707b417c08a21fa5bddab0589ceb200e9fc437fbe22fea9ce0326fb5293d8:bc12c4692893452b9bfd82e8814fb453",
+            "num_played_quiz": 0,
+            "num_played_questions": 0,
+            "num_correct_answered_questions": 0
+        },
+        "nl": {
+            "password": "d13a8daf53aee3e167e33dbdb93e2c1cd5afa77cbc10defcb48f567922eedf41:a133b19d5dd548938ad1e5cf1aad493d",
+            "num_played_quiz": 0,
+            "num_played_questions": 0,
+            "num_correct_answered_questions": 0
+        },
+        "hans": {
+            "password": "f77f3351257f7727ccca29a6bc5be73c140343efb8a6569c8213b46ebc54edbf:274e294b4c2e4b96a3c37273aee01414",
+            "num_played_quiz": 0,
+            "num_played_questions": 0,
+            "num_correct_answered_questions": 0
+        }
+    },
+    "quiz_data": {
+        "public": {
+            "tsa": {
+                "questions": [
+                    {
+                        "question_txt": "1+x=",
+                        "solution": 0
+                    },
+                    {
+                        "question_txt": "dsf",
+                        "solution": 1
+                    },
+                    {
+                        "question_txt": "dbsdr",
+                        "solution": "23"
+                    }
+                ]
+            },
+            "afd": {
+                "questions": [
+                    {
+                        "question_txt": "ed",
+                        "solution": 1
+                    },
+                    {
+                        "question_txt": "dsfl",
+                        "solution": 24
+                    },
+                    {
+                        "question_txt": "dfas",
+                        "solution": 2
+                    }
+                ]
+            }
+        }
+    }
+}
