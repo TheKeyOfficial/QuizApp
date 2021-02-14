@@ -20,7 +20,7 @@ class FaceInterface(ABC):
         """
         raise NotImplementedError
 
-    def get_choice_input(self, input_range: int):
+    def get_choice_input(self, input_range: int) -> int:
         """
         function which returns the choice selection of the user
         :param input_range: int which defines the max possible input
