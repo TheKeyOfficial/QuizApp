@@ -8,7 +8,6 @@ from .user_manager import UserManager
 class GameManager(object):
     def __init__(self):
         self._quiz_data_manager = QuizDataManager.instance()
-        self._question_factory = QuestionFactory()
         self._user_manager = UserManager.instance()
         self._question_buffer = []
         pass
@@ -74,7 +73,7 @@ class GameManager(object):
         :param kwargs: can contain {'question_txt': str, choices': [str, ..., str], 'solution': int}
         :return: None
         """
-        question = self._question_factory.make(**kwargs)
+        question = self._quiz_data_manager.question_factory.make(**kwargs)
         self._question_buffer.append(question)
         pass
 
