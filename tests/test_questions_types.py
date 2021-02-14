@@ -4,7 +4,7 @@ from model.quiz.question import *
 
 class TestQuestionTypes(TestCase):
     def test_choice_answer(self):
-        question = ChoiceQuestion('What is 1-1?', choices={'1', '0', '2'}, solution=1)
+        question = ChoiceQuestion('What is 1-1?', choices=['1', '0', '2'], solution=1)
         self.assertTrue(question.answer(1))
 
     def test_number_answer(self):
