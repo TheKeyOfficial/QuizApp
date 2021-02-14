@@ -7,7 +7,7 @@ class PublishQuiz(MenuInterface):
     PRIVATE = 'Private'
     QUIZ_TITLE = 'Please enter a title for your Quiz: '
 
-    def __init__(self, title='\nPUNBLISH QUESTION\n'):
+    def __init__(self, title='\nPUBLISH QUESTION\n'):
         super().__init__(title=title)
         self.game_manager = GameManager.instance()
         self.USER_MENU = {self.PUBLIC: self.public_dialog,
