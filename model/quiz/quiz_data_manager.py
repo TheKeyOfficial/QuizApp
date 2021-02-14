@@ -37,10 +37,10 @@ class QuizDataManager(DataManagerInterface):
         self.database_manager.write_database(data)
         pass
 
-    def get_all_public_quiz(self):
+    def get_all_public_quiz(self) -> dict:
         try:
             data = self.database_manager.read_database()[self.QUIZ_DATA][self.PUBLIC]
-            return self.create_quiz_list(data)
+            return self._create_quiz_dict(data)
         except KeyError:
             print('No public quiz exists')
         pass
@@ -48,12 +48,12 @@ class QuizDataManager(DataManagerInterface):
     def get_all_private_quiz(self, username: str) -> dict:
         try:
             data = self.database_manager.read_database()[self.QUIZ_DATA][self.PRIVATE][username]
-            return self.create_quiz_list(data)
+            return self._create_quiz_dict(data)
         except KeyError:
             print('No private quiz exists')
         pass
 
-    def create_quiz_list(self, data) -> dict:
+    def _create_quiz_dict(self, data) -> dict:
         quiz_list = {}
         for quiz_title, questions in data.items():
             quiz_questions = []
