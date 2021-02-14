@@ -10,7 +10,7 @@ class Question(ABC):
         pass
 
     @abstractmethod
-    def answer(self, solution):
+    def answer(self, solution) -> bool:
         raise NotImplementedError
 
     @abstractmethod
