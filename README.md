@@ -6,16 +6,16 @@ There should be a quiz application for daily pastime.
 In the application there are two roles, the User and the Registered User.
 When starting the application, there are three options:
 - The current user, can select an existing quiz and play it.
-- The current user, can log in with username and password.
+- The current user, can log in with a username and password.
 - The current user can register if he is not registered yet.
 
 ### Activity: Registration 
-During registration it is necessary to enter a username (alphanumeric, no special characters) and a password.
+During registration, it is necessary to enter a username (alphanumeric, no special characters) and a password.
 Registered users are then saved in a corresponding file.
 Catch: An already registered user cannot register again.
 
 ### Activity: Registration
-A registered user can log in with the user name and password.
+A registered user can log in with the username and password.
 For simplicity, the login data should be checked against the data in the file.
 Appropriate security measures, that the password is not visible, etc. are not required.
 
@@ -45,7 +45,7 @@ The user's statistics are discarded when the application is closed.
 ### Requirements: Registered user
 Attributes:
 - Inherits from user
-- User name 
+- Username 
 - Password: Inherits
 - Statistics
 On the registered user is stored how many quizzes he has played, how many questions he has answered and how many questions he has answered correctly.
@@ -72,7 +72,7 @@ A question always has a specific question type:
 - Unique text
 
 #### Choice option:	
-In a choice question, the question can have a minimum of 2 and a maximum of 4 answer choices.
+In a choice question, the question can have a minimum of 2, and a maximum of 4 answer choices.
 How tall is the Eiffel Tower?
 1. 1 meter
 2. 20 meters
