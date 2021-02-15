@@ -39,37 +39,66 @@
     },
     "quiz_data": {
         "public": {
-            "tsa": {
+            "testttt": {
                 "questions": [
                     {
-                        "question_txt": "1+x=",
+                        "question_txt": "1",
+                        "solution": 1
+                    },
+                    {
+                        "question_txt": "1",
+                        "solution": 1
+                    },
+                    {
+                        "question_txt": "0",
                         "solution": 0
-                    },
-                    {
-                        "question_txt": "dsf",
-                        "solution": 1
-                    },
-                    {
-                        "question_txt": "dbsdr",
-                        "solution": "23"
                     }
                 ]
-            },
-            "afd": {
-                "questions": [
-                    {
-                        "question_txt": "ed",
-                        "solution": 1
-                    },
-                    {
-                        "question_txt": "dsfl",
-                        "solution": 24
-                    },
-                    {
-                        "question_txt": "dfas",
-                        "solution": 2
-                    }
-                ]
+            }
+        },
+        "private": {
+            "niels": {
+                "test": {
+                    "questions": [
+                        {
+                            "question_txt": "nei",
+                            "choices": [
+                                "k1",
+                                "ksdf",
+                                "ls"
+                            ],
+                            "solution": 0
+                        },
+                        {
+                            "question_txt": "1",
+                            "solution": 1
+                        },
+                        {
+                            "question_txt": "1",
+                            "solution": 1
+                        }
+                    ]
+                },
+                "dop": {
+                    "questions": [
+                        {
+                            "question_txt": "1",
+                            "choices": [
+                                "",
+                                ""
+                            ],
+                            "solution": 2
+                        },
+                        {
+                            "question_txt": "eol",
+                            "solution": "asld"
+                        },
+                        {
+                            "question_txt": "1",
+                            "solution": 1
+                        }
+                    ]
+                }
             }
         }
     }

@@ -22,7 +22,12 @@ class QuizDataManager(DataManagerInterface):
         try:
             data[self.QUIZ_DATA][self.PUBLIC].update(reg_user_dict)
         except Exception:
-            data.update({self.QUIZ_DATA: {self.PUBLIC: reg_user_dict}})
+            try:
+                data.update({self.QUIZ_DATA: {self.PUBLIC: reg_user_dict,
+                                              self.PRIVATE: data[self.QUIZ_DATA][self.PRIVATE]}})
+            except Exception:
+                data.update({self.QUIZ_DATA: {self.PUBLIC: reg_user_dict,
+                                              self.PRIVATE: {}}})
         self.database_manager.write_database(data)
         pass
 
@@ -33,7 +38,12 @@ class QuizDataManager(DataManagerInterface):
         try:
             data[self.QUIZ_DATA][self.PRIVATE][user_name].update(quiz)
         except Exception:
-            data.update({self.QUIZ_DATA: {self.PRIVATE: {user_name: quiz}}})
+            try:
+                data.update({self.QUIZ_DATA: {self.PRIVATE: {user_name: quiz},
+                                              self.PUBLIC: data[self.QUIZ_DATA][self.PUBLIC]}})
+            except Exception:
+                data.update({self.QUIZ_DATA: {self.PRIVATE: {user_name: quiz},
+                                              self.PUBLIC: {}}})
         self.database_manager.write_database(data)
         pass
 
